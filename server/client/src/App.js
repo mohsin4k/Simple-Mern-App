@@ -102,7 +102,7 @@ function App() {
         <button onClick={click}>SHOW</button>
       </div>
       {dataA.data  && dataA.data.map(e =>{
-        return (<div>{e.bookTitle}</div>)
+        return (<div key={e.bookID}>{e.bookTitle}</div>)
       })}
     </div>
   );
